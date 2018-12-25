@@ -44,7 +44,7 @@ export default {
       })
     },
 
-    move(key) {
+    move (key) {
       const element = this.$refs.alphabet.$refs[`city_${key}`][0]
       this.scroll.scrollToElement(element)
     }

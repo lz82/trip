@@ -26,14 +26,14 @@ export default {
       {
         icon: 'http://img1.qunarzz.com/piao/fusion/1608/58/d7b7b980b9bb4102.png',
         content: '金山卫城1'
-      },{
+      }, {
         icon: 'http://img1.qunarzz.com/piao/fusion/1608/cf/7635983375250702.png',
         content: '搜索海南的全部景点2'
       },
       {
         icon: 'http://img1.qunarzz.com/piao/fusion/1608/58/d7b7b980b9bb4102.png',
         content: '金山卫城2'
-      },{
+      }, {
         icon: 'http://img1.qunarzz.com/piao/fusion/1608/cf/7635983375250702.png',
         content: '搜索海南的全部景点3'
       },

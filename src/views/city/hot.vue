@@ -12,15 +12,15 @@
 </template>
 
 <script>
-  export default {
-    name: 'CityHot',
+export default {
+  name: 'CityHot',
 
-    data () {
-      return {
-        hotList: ['北京', '上海', '三亚', '香港', '杭州', '广州', '成都', '深圳', '苏州', '桂林', '西安', '厦门']
-      }
+  data () {
+    return {
+      hotList: ['北京', '上海', '三亚', '香港', '杭州', '广州', '成都', '深圳', '苏州', '桂林', '西安', '厦门']
     }
   }
+}
 </script>
 
 <style lang="less" scoped>

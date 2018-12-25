@@ -26,7 +26,6 @@ export default {
     }
   },
 
-
   data () {
     return {
       searchKey: '',
@@ -48,12 +47,12 @@ export default {
     inputListener () {
       const vm = this
       return Object.assign({},
-      vm.$listeners,
-      {
-        input (e) {
+        vm.$listeners,
+        {
+          input (e) {
             vm.$emit('input', e.target.value)
-        }
-      })
+          }
+        })
     }
   },
 

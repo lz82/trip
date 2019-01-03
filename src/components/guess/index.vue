@@ -4,7 +4,8 @@
       <img src="//img1.qunarzz.com/piao/fusion/1711/89/ebc329f16c55bb02.png" alt=""><span>猜你喜欢</span>
     </h5>
     <ul class="list">
-      <li class="item" v-for="item in list" :key="item.img">
+      <router-link class="item" tag="li" v-for="item in list" :key="item.img" :to="'/detail/' + item.id">
+      <!-- <li class="item" v-for="item in list" :key="item.img"> -->
         <div class="left">
           <div class="can-order" v-if="item.canOrder">
             可订明日
@@ -31,7 +32,8 @@
             <span>{{item.desc}}</span>
           </div>
         </div>
-      </li>
+      <!-- </li> -->
+      </router-link>
     </ul>
     <div class="more">
       查看所有产品
@@ -53,6 +55,7 @@ export default {
     return {
       list: [
         {
+          id: 1,
           name: '上海杜莎夫人蜡像馆',
           img: '//img1.qunarzz.com/sight/p0/1704/c9/c936f3fccfc6d7eda3.img.jpg_200x200_46052773.jpg',
           canOrder: 1,
@@ -63,6 +66,7 @@ export default {
           desc: '听说吴亦凡喔skr'
         },
         {
+          id: 2,
           name: '上海欢乐谷',
           img: '//img1.qunarzz.com/sight/p0/1811/e4/e4b9b471d2afc473a3.img.jpg_200x200_9a7794fc.jpg',
           canOrder: 1,
@@ -73,6 +77,7 @@ export default {
           desc: '敢上1200米长的木质过山车吗？'
         },
         {
+          id: 3,
           name: '上海迪士尼乐园',
           img: '//img1.qunarzz.com/sight/p0/1607/7c/7cda8b6782dabd80b4.img.jpg_200x200_2039e660.jpg',
           canOrder: 1,
@@ -83,6 +88,7 @@ export default {
           desc: '全球最大的迪士尼城堡'
         },
         {
+          id: 4,
           name: '上海马戏城',
           img: '//img1.qunarzz.com/sight/p0/1503/36/36a266a141bccdc9.water.jpg_200x200_069fe6d8.jpg',
           canOrder: 1,
@@ -93,6 +99,7 @@ export default {
           desc: '上海国际文化都市的标志性建筑'
         },
         {
+          id: 5,
           name: '上海动物园',
           img: '//img1.qunarzz.com/sight/p0/1603/9b/9bf694a468dd774490.water.jpg_200x200_c7f8a6ad.jpg',
           canOrder: 1,
@@ -103,6 +110,7 @@ export default {
           desc: '巨型象龟了解一下~'
         },
         {
+          id: 6,
           name: '上海中心大厦',
           img: '//img1.qunarzz.com/sight/p0/1707/62/62981f052681ef5ba3.img.jpg_200x200_43d6d1e7.jpg',
           canOrder: 0,

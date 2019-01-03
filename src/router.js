@@ -3,7 +3,8 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-export default new Router({
+let router = new Router({
+  // mode: 'hash',
   routes: [
     {
       path: '/',
@@ -27,6 +28,22 @@ export default new Router({
       path: '/search',
       name: 'search',
       component: () => import(/* webpackChunkName: "search" */ './views/search')
+    },
+    {
+      path: '/detail/:id',
+      name: 'detail',
+      props: true,
+      component: () => import(/* webpackChunkName: "detail" */ './views/detail')
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    // return 期望滚动到哪个的位置
+    return { x: 0, y: 0 }
+  }
 })
+
+// router.afterEach((to, from, next) => {
+//   window.scrollTo(0, 0)
+// })
+
+export default router
